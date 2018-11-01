@@ -10,4 +10,4 @@ Uses the following python libraries:
 - pandas
 
 #### Credits
-This was done as one of the projects for the Udacity Data Analyst Nanodegree, and as such relies heavily on the project guidelines, as well as initial code structure.
+This was done as one of the projects for the [Udacity Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002), and as such relies heavily on the project guidelines, as well as initial code structure.
