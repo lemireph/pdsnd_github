@@ -1,7 +1,6 @@
 import warnings
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -10,15 +9,6 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 
 days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-
-# Test cases
-#def get_filters():
-#    return 'chicago','august','all'
-#    return 'washington', 'may', 'all'
-#    return 'new york city', 'all', 'all'
-#    return 'chicago','all','tuesday','yes'
-#    return 'washington','all','all','yes'
-#    return 'chicago','all','all','yes'
 
 def get_filters():
     """
@@ -33,7 +23,7 @@ def get_filters():
     print("\nHello! Let's explore some US bikeshare data!\n\nWe have information on three cities: Chicago, New York City, and Washington.")
     # Get user input for city (chicago, new york city, washington).
     city = input("Type the name of the city that interests you: ").lower()
-    while city != "chicago" and city != "new york city" and city != "washington":
+    while city not in CITY_DATA.keys():
         city = input("That doesn't look quite right... look above for the choices available, and please try again: ").lower()
 
     # Get user input for month (all, january, february, ... , june)
