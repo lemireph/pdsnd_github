@@ -1,13 +1,13 @@
-### November 1, 2018
+#### November 1, 2018
 
 ### Exploring US Bikeshare Data
 With access to data from US Bikeshare, allows interactive exploration of usage and users, based on a selected city, month, and day.
 
-### Files Used
+#### Files Used
 Uses the following python libraries:
-warnings
-time
-pandas
+- warnings
+- time
+- pandas
 
-### Credits
+#### Credits
 This was done as one of the projects for the Udacity Data Analyst Nanodegree, and as such relies heavily on the project guidelines, as well as initial code structure.
